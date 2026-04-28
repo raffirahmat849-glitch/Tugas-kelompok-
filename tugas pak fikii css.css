@@ -1,0 +1,317 @@
+/* BAGIAN YANG MENGATUR CSS ( CASCADING STYLE SHEET ) 
+nama : Muhammad Raffi Rahmad 
+nim : 
+jurusan : teknik informatika 
+
+/* Reset dan base styles */
+* {
+    margin: 0; /* untuk menghapus jarak luar */
+    padding: 0; /* untuk menghapus jarak dalam */
+    box-sizing: border-box; /* supaya ukuran lebih mudah diatur */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* gaya font yang dipakai */
+    background: linear-gradient(135deg /*deg ( degrre / derajat untuk menentukan arah gradiasi warna )  */
+                , #667eea 0%, #764ba2 100%); /* kostumisasi background / latar belakag */
+    min-height: 100vh; /* viewport height yaitu satuan ukuran berdasarkan tinggi layar */
+    color: #333; /* untuk mengatur warna */
+    line-height: 1.6; /* untuk mengatur jarak antar teks */
+}
+
+/* Container utama */
+.container {
+    max-width: 1200px; /* untuk mengatur lebar maksimal ukuran website */
+    margin: 0 auto; /* mengatur antara jarak antar elemen */
+    padding: 20px; /* agar teks jadi rapi */
+}
+
+/* Header */
+header {
+    text-align: center; /* untuk mengatur posisi teks */
+    margin-bottom: 40px; /* untuk mengatur jarak bawah suatu elemen */
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem; 
+    /* untuk mengatur ukuran font */ 
+    /* rem ( room em ) ukuran font pada element html 
+        contoh : 
+        1rem = 16px 
+        2rem = 32px */
+    margin-bottom: 10px; 
+    font-weight: 300; /* untuk mengatur ketebalan teks */
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9; /* untuk mengatur kepudaran atau transparansi suatu  element */
+}
+
+/* Form section */
+.form-section {
+    background: white;
+    border-radius: 15px; /* untuk mengatur sudut */
+    padding: 30px; 
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* untuk mengatur bayangan elemen */
+    transition: transform 0.3s ease; /* untuk mengatur animasi suatu elemen*/ 
+}
+
+.form-section:hover {
+    transform: translateY(-5px); /* untuk meng geser posisi */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block; /* untuk mengatur layot element*/
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%; /* untuk mengatur lebar */
+    padding: 12px 15px; /* untuk mengatur agar bisa ke pinggir */
+    border: 2px solid #e1e5e9; /* untuk mengatur lebar */
+    border-radius: 8px; /* untuk menjadi lebih moderen tidk kaku */
+    font-size: 1rem; /* untuk ukuran font */
+    transition: all 0.3s ease; /* untuk animasi transisi */
+    background: #f8f9fa; /* untuk mengatur backroand menjadi putih */
+}
+
+.form-group input:focus, /* untuk memfokuskan pada suatu titik */
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none; /* untuk menghilangkan garis */
+    border-color: #667eea; /* untuk mengatur warna border */
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical; /* untuk mengatur ukuran sutau element */
+    min-height: 80px;
+}
+
+/* Radio buttons */
+.radio-group {
+    display: flex;
+    gap: 20px; /* untuk mengatur jarak antar item */
+    margin-top: 8px; /* untuk memberikan jarak dibagian atas ssuatu element */
+}
+
+.radio-label {
+    display: flex;
+    align-items: center; /* mengatur posisi items */
+    cursor: pointer; /* untuk meng arahkan cursor selayaknya tangan */
+    font-weight: 500;
+    color: #555;
+}
+
+.radio-label input[type="radio"] {
+    margin-right: 8px; /* untuk mengatur luat kanan */
+    width: auto;
+    accent-color: #667eea; /* untuk memberikan warna pada tombol jk */
+}
+
+/* Date group */
+.date-group {
+    display: flex;
+    gap: 10px;
+}
+
+.date-group select {
+    flex: 1; /* untuk membagi ruang sama rata*/
+}
+
+/* Button group */
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;/* untuk mengatur perubahan huruf*/
+    letter-spacing: 0.5px; /* untuk mengatur jarak huruf */
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #45a049, #4CAF50);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.btn-reset {
+    background: linear-gradient(135deg, #f44336, #d32f2f);
+    color: white;
+    box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);
+}
+
+.btn-reset:hover {
+    background: linear-gradient(135deg, #d32f2f, #f44336);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(244, 67, 54, 0.4);
+}
+/* Bagian saya 
+Nama = Ahmad Ramadhan
+NIM =202412052 */
+/* Table section */
+.table-section h2 { /* menargetkan elemen <h2> di dalam class table-section */
+    color: white; /* warna teks putih*/
+    text-align: center; /* teks rata tengah */
+    margin-bottom: 20px; /* jarak bawah 20px */
+    font-size: 2rem; /* ukuran teks (2x ukuran default) */
+    font-weight: 300; /* ukuran teks (2x ukuran default) */
+}
+
+.table-container {
+    background: white; /* latar belakang putih */
+    border-radius: 15px; /* sudut membulat */
+    overflow: hidden; /* untuk mengatur arah scroll supaya horizontal */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* memberi bayangan (efek elegan) */
+}
+
+#dataTable {
+    width: 100%; /* tabel full lebar container */
+    border-collapse: collapse; /* garis tabel jadi menyatu (tidak double) */
+}
+
+#dataTable thead { /* bagian kepala tabel */
+    background: linear-gradient(135deg, #667eea, #764ba2); /* warna gradasi biru-ungu */
+    color: white; /* teks putih */
+}
+
+#dataTable th {
+    padding: 15px; /* jarak dalam */
+    text-align: left; /* teks rata kiri */
+    font-weight: 600; /* agak tebal */
+    font-size: 0.95rem; /* ukuran sedikit kecil */
+    text-transform: uppercase; /* huruf besar semua */
+    letter-spacing: 0.5px; /* jarak antar huruf */
+}
+
+#dataTable td {
+    padding: 15px; /* jarak isi sel */
+    border-bottom: 1px solid #e1e5e9;/* untuk mempertegas garis batas*/
+    font-size: 0.9rem; /* ukuran teks */
+}
+
+#dataTable tbody tr {
+    transition: background-color 0.3s ease; /* animasi halus saat warna berubah (hover) */
+}
+
+#dataTable tbody tr:hover {
+    background-color: #f8f9fa; /* Saat kursor diarahkan warna background berubah jadi abu muda */
+}
+
+#dataTable tbody tr:last-child td {
+    border-bottom: none; /* Menghapus garis bawah pada baris terakhir (biar rapi) */
+}
+
+/* Action buttons in table */
+.action-btn { /* mengatur tampilan tombol */
+    padding: 6px 12px; /* Mengatur jarak antara teks tombol dengan tepi tombol */
+    border: none; /* Mengatur jarak antara teks tombol dengan tepi tombol */
+    border-radius: 5px; /* Membuat sudut tombol menjadi melengkung */
+    font-size: 0.8rem; /* Menentukan ukuran teks. */
+    font-weight: 600; /* Mengatur ketebalan font */
+    cursor: pointer; /* Mengubah ikon kursor menjadi tangan saat pengguna mengarahkan mouse ke atas tombol */
+    margin-right: 5px; /* Memberikan jarak di sisi kanan tombol sebesar 5px */
+    transition: all 0.3s ease; /* Membuat perubahan gaya */
+    text-transform: uppercase; /* Mengubah semua huruf di dalam tombol menjadi huruf kapital secara otomatis */
+    letter-spacing: 0.3px; /* Memberikan sedikit jarak antar karakter */
+}
+
+.edit-btn {
+    background: #2196F3; /* Warna biru untuk tombol edit */
+    color: white; /* teks putih */
+}
+
+.edit-btn:hover { /* Saat hover */
+    background: #1976D2; /* warna jadi lebih gelap */
+    transform: translateY(-1px); /* tombol naik sedikit */
+}
+
+.delete-btn {
+    background: #f44336; /* Warna merah untuk delete */
+    color: white; /* teks warna putih */
+} 
+
+.delete-btn:hover {
+    background: #d32f2f;
+    transform: translateY(-1px);
+} /* Saat hover: warna lebih gelap dan efek naik sedikit
+/* Responsive design */
+@media (max-width: 768px) { /*Style ini hanya berlaku untuk layar dengan lebar kurang dari 768px (tablet / HP) */
+
+    .container {
+        padding: 15px;
+    } /*Mengatur jarak dalam (padding) container jadi 15px supaya lebih lega di layar kecil. */
+
+    header h1 {
+        font-size: 2rem;
+    } /*Ukuran judul (h1) diperkecil jadi 2rem agar tidak terlalu besar di layar kecil. */
+
+    .form-section {
+        padding: 20px;
+    } /*Memberi ruang dalam (padding) 20px di bagian form supaya tetap rapi. */
+
+    .date-group {
+        flex-direction: column; /* arah posisi penempatan item  */
+    } /*Mengubah susunan elemen jadi vertikal bukan horizontal. */
+
+    .button-group {
+        flex-direction: column;
+    } /* Tombol-tombol ditumpuk ke bawah bukan sejajar ke samping. */
+
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    } /* Radio button ditampilkan ke bawah dan gap: 10px yaitu memberi jarak antar pilihan */
+
+    .table-container {
+        overflow-x: auto;
+    } /* Kalau tabel terlalu lebar, bisa discroll ke samping atau horizontal scroll. */
+
+    #dataTable {
+        min-width: 600px;
+    } /* Tabel minimal lebarnya 600px dan Supaya tidak hancur layout-nya meskipun layar kecil */
+}
+
+@media (max-width: 480px) /*Style khusus untuk layar sangat kecil (HP kecil) */
+{
+    header h1 {
+        font-size: 1.8rem;
+    } /* judul diperkecil lagi jadi 1.8rem agar lebih proporsional. */
+
+    .form-section {
+        padding: 15px;
+    } /* Padding dikurangi supaya tidak terlalu sempit. */
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    } /* Tombol dibuat:Lebih kecil padding-nya, Font lebih kecil (0.9rem) Supaya muat di layar HP */
+}
