@@ -1,0 +1,114 @@
+    <!-- BAGIAN YANG MEMBUAT STRUTUR ATAU MENYESUAIKAN STRUKTUR WEBSITE 
+            nama : Errizal Ade Ragil Khariurnayif
+            nim : 202412010
+            jurusan : teknik informatika -->
+    
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Data Mahasiswa</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Form Data Mahasiswa</h1>
+                <p>Kelola data mahasiswa dengan mudah dan elegan</p>
+            </header>
+
+            <section class="form-section">
+                <form id="formMahasiswa">
+                    <div class="form-group">
+                        <label for="nim">NIM</label>
+                        <input type="text" id="nim" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alamat">Alamat</label>
+                        <textarea id="alamat" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="jeniskelamin" value="Pria" required> Pria
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="jeniskelamin" value="Wanita" required> Wanita
+                            </label>
+                        </div>
+                    </div>
+<!-- Bagian Saya -->
+                    <div class="form-group"> <!-- Div disini berfungsi membuatkan tabel bagian pengisian -->
+                        <label>Tanggal Lahir</label> <!-- Label disini berfungsi memberi teks label "Tanggal Lahir" -->
+                        <div class="date-group"> <!-- Div pada disini berfungsi membuatkan tabel group penanggalan -->
+                            <select id="tanggal" required> <!-- Select disini menampung variable tanggal dan tidak boleh kosong -->
+                                <option value="">Tanggal</option> <!-- Option disini merupakan input tanggal berupa angka -->
+                            </select> 
+                            <select id="bulan" required> <!-- Select disini menampung variable bulan dan tidak boleh kosong -->
+                                <option value="">Bulan</option> <!-- Option disini merupakan input bulan berupa opsi -->
+                                <option value="01">Januari</option> <!-- Opsi Bulan 1 -->
+                                <option value="02">Februari</option> <!-- Opsi Bulan ke-2 -->
+                                <option value="03">Maret</option> <!-- Opsi Bulan ke-3 -->
+                                <option value="04">April</option> <!-- Opsi Bulan ke-4 -->
+                                <option value="05">Mei</option> <!-- Opsi Bulan ke-5 -->
+                                <option value="06">Juni</option> <!-- Opsi Bulan ke-6 -->
+                                <option value="07">Juli</option> <!-- Opsi Bulan ke-7 -->
+                                <option value="08">Agustus</option> <!-- Opsi Bulan ke-8 -->
+                                <option value="09">September</option> <!-- Opsi Bulan ke-9 -->
+                                <option value="10">Oktober</option> <!-- Opsi Bulan ke-10 -->
+                                <option value="11">November</option> <!-- Opsi Bulan ke-11 -->
+                                <option value="12">Desember</option> <!-- Opsi Bulan ke-12 -->
+                            </select>
+                            <select id="tahun" required> <!-- Select disini menampung variable Tahun dan tidak boleh kosong -->
+                                <option value="">Tahun</option> <!-- Option disini merupakan input Tahun berupa angka -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group"> <!-- Div disini berfungsi membuatkan tabel bagian pengisian -->
+                        <label for="password">Password</label> <!-- Label disini berfungsi menambahkan teks label "Password" -->
+                        <input type="password" id="password"> <!-- Input disini berfungsi untuk memasukkan password dan mengubahnya tampilan huruf input menjadi titik  -->
+                    </div>
+
+                    <div class="button-group"> <!-- Div disini berfungsi membuatkan tabel bagian button / tombol -->
+                        <button type="submit" class="btn btn-submit">Submit</button> <!-- tombol submit dengan label submit serta perintah mengirim -->
+                        <button type="reset" class="btn btn-reset">Reset</button> <!-- tombol reset dengan label reset serta perintah reset isi form -->
+                    </div>
+                </form>
+            </section>
+<!--Bagian Saya -->
+            <section class="table-section">
+                <h2>Data Mahasiswa</h2>
+                <div class="table-container">
+                    <table id="dataTable">
+                        <thead>
+                            <tr>
+                                <th>NIM</th>
+                                <th>Nama</th>
+                                <th>Alamat</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Password</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Data akan ditambahkan di sini -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+    </html>
