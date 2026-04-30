@@ -1,18 +1,3 @@
-{
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/raffirahmat849-glitch/Tugas-kelompok-/blob/main/t2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
         "import random\n",
         "import matplotlib.pyplot as plt\n",
         "\n",
@@ -158,26 +143,3 @@
         "\n",
         "# RUN\n",
         "GA()"
-      ],
-      "metadata": {
-        "id": "Ei7ByakAP_-p"
-      },
-      "execution_count": null,
-      "outputs": []
-    }
-  ],
-  "metadata": {
-    "colab": {
-      "name": "Selamat Datang di Colab",
-      "toc_visible": true,
-      "provenance": [],
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "display_name": "Python 3",
-      "name": "python3"
-    }
-  },
-  "nbformat": 4,
-  "nbformat_minor": 0
-}
