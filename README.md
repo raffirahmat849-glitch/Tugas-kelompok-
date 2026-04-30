@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 # =========================================================
 # DATA (SUDAH FIX)
 # =========================================================
-  subjects = ["AI", "DB", "WEB", "ML", "IOT"]
- 
-  times = ["Pagi", "Siang", "Sore", "Malam", "Dini"]
- 
-  POP_SIZE = 30
-  GENERATIONS = 100
-  MUTATION_RATE = 0.2
+    subjects = ["AI", "DB", "WEB", "ML", "IOT"]
+   
+    times = ["Pagi", "Siang", "Sore", "Malam", "Dini"]
+   
+    POP_SIZE = 30
+    GENERATIONS = 100
+    MUTATION_RATE = 0.2
 
   Pada bagian data sudh fix
  bagian ini berisi data prameter utama yang di gunakan dalam algoritma. subjects merupakan daftar mata pelajaran
