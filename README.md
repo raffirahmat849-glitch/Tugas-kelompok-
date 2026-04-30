@@ -1,17 +1,17 @@
-import random
-import matplotlib.pyplot as plt
+ import random
+ import matplotlib.pyplot as plt
 
 # =========================================================
 # DATA (SUDAH FIX)
 # =========================================================
-subjects = ["AI", "DB", "WEB", "ML", "IOT"]
+ subjects = ["AI", "DB", "WEB", "ML", "IOT"]
 
-# 🔥 ditambah agar cukup
-times = ["Pagi", "Siang", "Sore", "Malam", "Dini"]
+ # 🔥 ditambah agar cukup
+ times = ["Pagi", "Siang", "Sore", "Malam", "Dini"]
 
-POP_SIZE = 30
-GENERATIONS = 100
-MUTATION_RATE = 0.2
+ POP_SIZE = 30
+ GENERATIONS = 100
+ MUTATION_RATE = 0.2
 
 'Pada bagian data sudh fix'
  bagian ini berisi data prameter utama yang di gunakan dalam algoritma. subjects merupakan daftar mata pelajaran
@@ -23,11 +23,11 @@ MUTATION_RATE = 0.2
 # =========================================================
 # INIT
 # =========================================================
-def create_schedule():
-    return [random.choice(times) for _ in subjects]
-
-def init_population():
-    return [create_schedule() for _ in range(POP_SIZE)]
+ def create_schedule():
+     return [random.choice(times) for _ in subjects]
+ 
+ def init_population():
+     return [create_schedule() for _ in range(POP_SIZE)]
 
 'Pada bagian init'
 Bagian ini digunakan untuk membuat solusi awal (inisialisasi populasi). fungsi create_schedule() menghasilkan satu jadwal dengan cara memilih 
