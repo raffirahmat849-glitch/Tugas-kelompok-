@@ -12,7 +12,7 @@
   GENERATIONS = 100
   MUTATION_RATE = 0.2
 
-'Pada bagian data sudh fix'
+  Pada bagian data sudh fix
  bagian ini berisi data prameter utama yang di gunakan dalam algoritma. subjects merupakan daftar mata pelajaran
  yang akan di jadwalkan, sedangkan times adalah pilihan slot waktu yang tersediah. POP_SIZE menentukan jumlah solusi
  (jadwal) dalam setiap generasi, GENERATIONS menunjukan berapa kali proses pencarian solusi
