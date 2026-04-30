@@ -1,5 +1,5 @@
-import random
-import matplotlib.pyplot as plt
+    import random
+    import matplotlib.pyplot as plt
 
 # =========================================================
 # DATA (SUDAH FIX)
@@ -22,11 +22,11 @@ import matplotlib.pyplot as plt
 # =========================================================
 # INIT
 # =========================================================
-  def create_schedule():
-      return [random.choice(times) for _ in subjects]
-  
-  def init_population():
-      return [create_schedule() for _ in range(POP_SIZE)]
+      def create_schedule():
+          return [random.choice(times) for _ in subjects]
+      
+      def init_population():
+          return [create_schedule() for _ in range(POP_SIZE)]
 
 Pada bagian init
 Bagian ini digunakan untuk membuat solusi awal (inisialisasi populasi). fungsi create_schedule() menghasilkan satu jadwal dengan cara memilih 
@@ -35,16 +35,16 @@ sebanyak POP_SIZE, yang nantinya akan di gunakan sebagai titik awal proses Genet
 
 # =========================================================
 # HITUNG KONFLIK
-# =========================================================
-def count_conflicts(schedule):
-    used = set()
-    conflicts = 0
-
-    for t in schedule:
-        if t in used:
-            conflicts += 1
-        else:
-            used.add(t)
+    # =========================================================
+    def count_conflicts(schedule):
+        used = set()
+        conflicts = 0
+    
+        for t in schedule:
+            if t in used:
+                conflicts += 1
+            else:
+                used.add(t)
 
     return conflicts
 
