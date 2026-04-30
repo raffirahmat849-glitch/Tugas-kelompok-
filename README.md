@@ -1,5 +1,5 @@
-  import random
-  import matplotlib.pyplot as plt
+import random
+import matplotlib.pyplot as plt
 
 # =========================================================
 # DATA (SUDAH FIX)
@@ -28,7 +28,7 @@
   def init_population():
       return [create_schedule() for _ in range(POP_SIZE)]
 
-'Pada bagian init'
+Pada bagian init
 Bagian ini digunakan untuk membuat solusi awal (inisialisasi populasi). fungsi create_schedule() menghasilkan satu jadwal dengan cara memilih 
 waktu secara acak dari times untuk setiap mata pelajaran di subject. sementara itu, fungsi init_population() membuat sekumpulan jadwal (populasi awal
 sebanyak POP_SIZE, yang nantinya akan di gunakan sebagai titik awal proses Genetic Algorithm. Intinya bagian ini membentuk kumpulan solusi awal secara acak.
